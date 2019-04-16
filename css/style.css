@@ -1,0 +1,154 @@
+
+/****************************************************************
+ 
+-------------------------- GENERAL ------------------------------
+ 
+****************************************************************/ 
+ 
+html {}
+ 
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+ 
+a, h1,h2,h4,h5,h6,p {
+	
+	color: #FFFFFF;
+}
+ 
+ 
+ 
+/****************************************************************
+ 
+-------------------- MAIN STRUCTURE -----------------------------
+ 
+****************************************************************/ 
+ 
+.container {
+	
+	
+}
+ 
+#header {}
+ 
+#content {}
+ 
+main {
+	flex: 1 0 auto;
+}
+ 
+#vp {
+	width: 80vw;
+	text-align: center;
+}
+.centering{
+	 position: absolute;
+  left: 50%;
+  top: 50%;
+	transform: translate(-50%, -50%);
+}
+ 
+footer {
+	
+}
+ 
+
+ 
+ 
+ 
+/****************************************************************
+ 
+----------------------------- HEADER ----------------------------
+ 
+***************************************************************/ 
+
+/***NAV***/
+nav{
+	-webkit-box-shadow: none;!important
+	-moz-box-shadow: none;!important
+	box-shadow: none;!important
+
+}
+nav a:hover,
+.sidenav a:hover {
+	background-color: transparent !important;
+	
+}
+nav li {
+	
+}
+.contain{
+	margin-left: 5%;
+	margin-right: 7%;
+}
+.menu a,
+.sidenav {
+	font-family: 'Noto Serif', serif;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 60px;
+	letter-spacing: 0.62px;
+
+}
+.menu-item::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background: #fff;
+	transition: width .3s;
+}
+.menu-item:hover::after, .active {
+	width: 100%;
+}
+
+/****************************************************************
+ 
+----------------------- MAIN COLUMN -----------------------------
+ 
+****************************************************************/ 
+ /**HOME**/
+.home{
+	background: url(../assets/images/Home.png);
+	background-color: black;
+	
+}
+#vp h1{
+	font-family: 'Crete Round', serif;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	
+}
+#vp p{
+	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+
+}
+/**SERVICES**/
+/**CAREERS**/
+/**ABOUT US**/
+/**PROJECTS*/
+
+ 
+ 
+ 
+/****************************************************************
+ 
+-------------------- FOOTER  & COPYRIGHT-------------------------
+ 
+****************************************************************/
+ /**copyright**/
+.copyright p{
+	font-family: 'Roboto Mono', monospace;
+}
+ 
+ 
+/****************************************************************
+ 
+-------------------- MEDIA QUERY -----------------------------
+ 
+****************************************************************/ 
+ 
