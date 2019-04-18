@@ -34,9 +34,11 @@ p {
 	mix-blend-mode: difference;
 }
 
-.black-back a, .black-back p, .black-back h4{
-	color: black!important;
-	 
+.black-back a,
+.black-back p,
+.black-back h4 {
+	color: black !important;
+
 }
 
 /****************************************************************
@@ -314,6 +316,10 @@ button{
 	width: 105%;
 	min-height: 150px; 
 		
+}
+	.black-back a, .black-back p, .black-back h4{
+	color: black!important;
+	 
 }
 	
 }
