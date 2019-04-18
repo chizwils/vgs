@@ -4,7 +4,9 @@
  
 ****************************************************************/
 
-html {}
+html {
+	height: 100vh;
+}
 
 body {
 	display: flex;
@@ -12,10 +14,11 @@ body {
 	flex-direction: column;
 }
 .background-cover{
+	height: 100vh;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: 100% auto;
 	background-size: cover;
 	background-position: center;
 }
