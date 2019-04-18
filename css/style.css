@@ -317,10 +317,10 @@ button{
 	min-height: 150px; 
 		
 }
-	.black-back a, .black-back p, .black-back h4{
-	color: black!important;
-	 
-}
+	.contact h4, .contact p, .contact a{
+		color: black;
+	}
+	
 	
 }
 
