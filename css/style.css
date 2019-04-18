@@ -1,98 +1,122 @@
-
 /****************************************************************
  
 -------------------------- GENERAL ------------------------------
  
-****************************************************************/ 
- 
+****************************************************************/
+
 html {}
- 
+
 body {
 	display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+	min-height: 100vh;
+	flex-direction: column;
 }
- 
-a, h1,h2,h4,h5,h6,p {
-	
+.background-cover{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+a,
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+
 	color: #FFFFFF;
+	mix-blend-mode: difference;
 }
- 
- 
- 
+
+.black-back a, .black-back p, .black-back h4{
+	color: black!important;
+	 
+}
+
 /****************************************************************
  
 -------------------- MAIN STRUCTURE -----------------------------
  
-****************************************************************/ 
- 
-.container {
-	
-	
-}
- 
+****************************************************************/
+
+.container {}
+
 #header {}
- 
+
 #content {}
- 
+
 main {
 	flex: 1 0 auto;
+	margin-top: 2%;
 }
- 
+
 #vp {
 	width: 80vw;
 	text-align: center;
 }
-.centering{
-	 position: absolute;
-  left: 50%;
-  top: 50%;
+
+.centering {
+	position: absolute;
+	left: 50%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 }
- 
-footer {
-	
-}
- 
 
- 
- 
- 
+footer {}
+
+
+
+
+
 /****************************************************************
  
 ----------------------------- HEADER ----------------------------
  
-***************************************************************/ 
+***************************************************************/
 
 /***NAV***/
-nav{
-	-webkit-box-shadow: none;!important
-	-moz-box-shadow: none;!important
-	box-shadow: none;!important
-
+nav {
+	-webkit-box-shadow: none;
+	 !important -moz-box-shadow: none;
+	 !important box-shadow: none;
+	 !important
 }
+
 nav a:hover,
 .sidenav a:hover {
 	background-color: transparent !important;
-	
+
 }
-nav li {
-	
-}
-.contain{
+
+nav li {}
+
+.contain {
 	margin-left: 5%;
 	margin-right: 7%;
 }
-.menu a,
-.sidenav {
+
+
+.sidenav a {
 	font-family: 'Noto Serif', serif;
 	font-weight: lighter;
 	font-size: 15px;
 	line-height: 60px;
 	letter-spacing: 0.62px;
+	color: white!important;
 
 }
-.menu-item::after{
+.menu a{
+	font-family: 'Noto Serif', serif;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 60px;
+	letter-spacing: 0.62px;
+}
+
+.menu-item::after {
 	content: '';
 	display: block;
 	width: 0;
@@ -100,7 +124,14 @@ nav li {
 	background: #fff;
 	transition: width .3s;
 }
-.menu-item:hover::after, .active {
+.black-back .menu-item::after{
+	background: black;
+}
+.black-back .sidenav .menu-item::after{
+	background: white;
+}
+.menu-item:hover::after,
+.active::after {
 	width: 100%;
 }
 
@@ -108,47 +139,176 @@ nav li {
  
 ----------------------- MAIN COLUMN -----------------------------
  
-****************************************************************/ 
- /**HOME**/
-.home{
+****************************************************************/
+/**HOME**/
+.home {
 	background: url(../assets/images/Home.png);
-	background-color: black;
 	
+
 }
-#vp h1{
+
+#vp h1 {
 	font-family: 'Crete Round', serif;
 	color: #FFFFFF;
 	letter-spacing: 1px;
-	
+
 }
-#vp p{
+
+#vp p {
 	font-size: 30px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 
 }
+
 /**SERVICES**/
 /**CAREERS**/
 /**ABOUT US**/
+/**CONTACT**/
+.contact{
+	background-image: url(../assets/images/contact.png);
+}
+form{
+	width:600px;
+	font-family: 'Roboto Mono', monospace!important;
+}
+
+input, textarea{
+	
+	background:  rgba(245, 245, 245, 0.8)!important;
+	border: 1px solid black!important;
+	padding-left: 20px!important;
+	padding-top: 20px;
+	 
+	
+	
+	
+}
+.contact h4{
+	font-weight: 700;
+	font-family: 'Noto Serif', serif;
+}
+.input-field input:focus {
+	border: 2px solid black;
+}
+
+.input-field input[type=text],
+.input-field input[type=tel],
+.input-field input[type=email],
+textarea {
+	font-family: 'Roboto Mono', monospace!important;
+}
+textarea{
+	width: 600px;
+	min-height: 150px; 
+}
+
+button{
+	background-color: black!important;
+	font-family: 'Roboto Mono', monospace!important;
+}
 /**PROJECTS*/
+/*.project {
+	background-image: url(../assets/images/project.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}*/
+.project{
+	background-color: #f4f4f4;
+}
 
  
- 
- 
+.right,.left{
+	
+}
+ .desc{
+	font-family: 'Crete Round', serif;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+.project-content-list{
+	
+}
+.image{
+	
+}
+.project-content .header{
+	font-family: 'Noto Serif', serif;
+	font-weight: lighter;
+	color: black;
+	font-size: 45px;
+}
+.company-img{
+	
+	width: 100%;
+}
+
+
+
+
+
 /****************************************************************
  
 -------------------- FOOTER  & COPYRIGHT-------------------------
  
 ****************************************************************/
- /**copyright**/
-.copyright p{
+/**copyright**/
+.copyright p {
 	font-family: 'Roboto Mono', monospace;
 }
- 
- 
+
+
 /****************************************************************
  
 -------------------- MEDIA QUERY -----------------------------
  
-****************************************************************/ 
- 
+****************************************************************/
+/**** RESPONSIVE ******/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 690px) {
+
+	html {
+		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	}
+
+	.contain{
+		margin-left:3px;
+		margin-right: 9px;
+	}
+	
+	form{
+	width:100%;
+		
+	
+}
+	textarea{
+	width: 105%;
+	min-height: 150px; 
+		
+}
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	...
+}
