@@ -22,6 +22,11 @@ body {
 	background-size: cover;
 	background-position: center;
 }
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
 a,
 h1,
 h2,
@@ -255,7 +260,7 @@ button{
 	background-position: center;
 }*/
 .project{
-	background-color: #f4f4f4;
+	background-color: #E3e3e3;
 }
 
  
