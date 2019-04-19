@@ -18,7 +18,7 @@ body {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: 100% auto;
+	-o-background-size:cover;
 	background-size: cover;
 	background-position: center;
 }
@@ -147,7 +147,7 @@ nav li {}
 ****************************************************************/
 /**HOME**/
 .home {
-	background: url(../assets/images/Home.png);
+	background-image: url(../assets/images/Home.png);
 	
 
 }
