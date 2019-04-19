@@ -206,6 +206,17 @@ nav li {}
 }
 /**CAREERS**/
 /**ABOUT US**/
+.about{
+	background-image: url(../assets/images/Home.png);
+	
+}
+.about .centering {
+	width: 80%;
+	font-size: 21px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	
+}
 /**CONTACT**/
 .contact{
 	background-image: url(../assets/images/contact.png);
