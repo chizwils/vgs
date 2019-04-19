@@ -167,6 +167,38 @@ nav li {}
 }
 
 /**SERVICES**/
+.service{
+	background-image: url(../assets/images/service.png)
+}
+.service .centering{
+	width: 90%;
+}
+.service-group{
+	
+}
+.service-group .title{
+	
+	font-family: 'Crete Round', serif;
+	font-size: 28px;
+	letter-spacing: 0.9px;
+	
+}
+.service-group .summary{
+	min-height: 150px;
+	font-family: 'Roboto Mono', monospace!important;
+	font-size: 14px;
+
+}
+.service-group .btn{
+	border: 1px solid #FFFFFF!important;
+	background-color: transparent!important;
+	font-family: 'Roboto Mono', monospace!important;
+}
+.intro h4{
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+	letter-spacing: 0.4px;
+}
 /**CAREERS**/
 /**ABOUT US**/
 /**CONTACT**/
@@ -230,22 +262,23 @@ button{
 .right,.left{
 	
 }
- .desc{
-	font-family: 'Crete Round', serif;
-	color: #FFFFFF;
+ .desc p{
+	font-family: 'Noto Serif', serif;
+	
 	letter-spacing: 1px;
 }
 .project-content-list{
 	
 }
-.image{
-	
+.project img{
+	width: 450px;
+	height: 400px;
 }
 .project-content .header{
-	font-family: 'Noto Serif', serif;
-	font-weight: lighter;
-	color: black;
-	font-size: 45px;
+	font-family: 'Crete Round', serif;
+	
+	color: #000000;
+	font-size: 25px;
 }
 .company-img{
 	
@@ -275,7 +308,7 @@ button{
 /**** RESPONSIVE ******/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 690px) {
 
 	html {
 		font-size: calc(13px + 5 * ((100vw - 320px) / 680));
