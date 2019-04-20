@@ -2,48 +2,69 @@
 <html>
 
 <head>
-	
-	<title>Home Page</title>
+
+	<title>Career</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
-        <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 	<!-- Compiled and minified CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato:300,400|Noto+Serif:400,700|Roboto+Mono" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script >
+		 $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+	</script>
 	<link rel="stylesheet" href="css/style.css">
-	
+
 
 </head>
 
-<body class='home'>
+<body class='career background-cover'>
 	<header class=''>
-		
+
 		<!--NAV BEGINS----->
 		<nav class="transparent">
 			<div class="nav-wrapper contain ">
 				<a href="index.html" class="brand-logo">VGS</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down menu">
-					<li><a href="#" class="menu-item active">Home</a></li>
+					<li><a href="index.html" class="menu-item ">Home</a></li>
 					<li><a href="about.html" class="menu-item">About Us</a></li>
 					<li><a href="service.html" class="menu-item">Capabilities</a></li>
-					<li><a href="project.html"class="menu-item">Projects</a></li>
-					<li><a href="career.html"class="menu-item">Careers</a></li>
-					<li><a href="contact.html"class="menu-item">Contact Us</a></li>
+					<li><a href="project.html" class="menu-item">Projects</a></li>
+					<li><a href="#" class="menu-item active">Careers</a></li>
+					<li><a href="contact.html" class="menu-item">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
+		<!---SIDE NAV---->
+		<ul class="sidenav transparent" id="mobile-demo">
+			<li><a href="index.html" class="menu-item ">Home</a></li>
+			<li><a href="about.html" class="menu-item">About Us</a></li>
+			<li><a href="service.html" class="menu-item">Capabilities</a></li>
+			<li><a href="project.html" class="menu-item">Projects</a></li>
+			<li><a href="#" class="menu-item active">Careers</a></li>
+			<li><a href="contact.html" class="menu-item">Contact Us</a></li>
+		</ul>
 		<!-- NAV ENDS ----->
 
 	</header>
 	<main class="contents">
-		<div id='vp' class="centering">
-			<h1>Corporate Strategy and Management</h1>
-			<p>Strategy at its best is victory gotten while sitting down</p>
+		<div id='' class="centering">
+			<h4 class="center">Are you a risk taking rockstar?</h4>
+			<p class="center">We are always looking to add new talent to our firm.</p>
+			<p class="center">Send your resume and cover letter to <strong>careers@vgs.com</strong>and if your qualifications fit our needs, we will get in touch with you.</p>
+			
 		</div>
 	</main>
 	<footer class="footer contain">
