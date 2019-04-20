@@ -197,6 +197,7 @@ nav li {}
 }
 .service .centering{
 	width: 90%;
+	position: relative!important;
 }
 .service-content{
 	width: 80%;
