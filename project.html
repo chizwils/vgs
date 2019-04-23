@@ -2,11 +2,11 @@
 <html>
 
 <head>
-	
+
 	<title>Project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
-        <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 	<!-- Compiled and minified CSS -->
@@ -19,19 +19,18 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script >
-		 $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-	</script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="css/style.css">
-	
+
+
 
 </head>
 
-<body class='project'>
+<body class='project background-cover'>
 	<header class=''>
-		
+
 		<!--NAV BEGINS----->
 		<nav class="transparent">
 			<div class="nav-wrapper contain ">
@@ -41,9 +40,9 @@
 					<li><a href="index.html" class="menu-item ">Home</a></li>
 					<li><a href="about.html" class="menu-item">About Us</a></li>
 					<li><a href="service.html" class="menu-item">Capabilities</a></li>
-					<li><a href="#"class="menu-item active">Projects</a></li>
-					<li><a href="career.html"class="menu-item">Careers</a></li>
-					<li><a href="contact.html"class="menu-item">Contact Us</a></li>
+					<li><a href="#" class="menu-item active">Projects</a></li>
+					<li><a href="career.html" class="menu-item">Careers</a></li>
+					<li><a href="contact.html" class="menu-item">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -51,7 +50,7 @@
 		<ul class="sidenav transparent" id="mobile-demo">
 			<li><a href="index.html" class="menu-item ">Home</a></li>
 			<li><a href="about.html" class="menu-item">About Us</a></li>
-			<li><a  href="serv ice.html" class="menu-item">Capabilities</a></li>
+			<li><a href="serv ice.html" class="menu-item">Capabilities</a></li>
 			<li><a href="#" class="menu-item active">Projects</a></li>
 			<li><a href="career.html" class="menu-item">Careers</a></li>
 			<li><a href="contact.html" class="menu-item">Contact Us</a></li>
@@ -59,7 +58,7 @@
 		<!-- NAV ENDS ----->
 
 	</header>
-	<main class="contents contain project-content">
+	<main class="contents  project-content">
 		<!--<div id='' class=" row project-content-list" >
 			<div class="left col s12 m6">
 				<div class="image ">
@@ -91,15 +90,73 @@
 				</div>
 			</div>
 		</div>-->
-		
-		<!-----Project carousel -->
-		
+
+		<!-----Project carousel --
+		<div class="carousel-wrap single-item ">
+			<div class="row ">
+				<div class="col m6 ">
+					<img class='company-img 'src="assets/images/Fusabo%201.jpg">
+				</div>
+				<div class="col m6">
+					<h2 class="header">Fusabo App: Market analysis, app marketing, app launch</h2>
+					<p class='desc'>VGS is currently partnering with Fusabo to help introduce this sports app to the market. From an in-depth market analysis, to product profitability analysis, to designing a marketing program for the target customer base reach, we are the 360 degree service providers to our partners.</p>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col m6">
+					<img class='company-img 'src="assets/images/1073Records.jpg">
+				</div>
+				<div class="col m6">
+					<h2 class="header">Fusabo App: Market analysis, app marketing, app launch</h2>
+					<p>VGS handled promotion and marketing for the music label 1073 Records and its associated acts. Online/Digital Marketing, radio plug ins/ads, TV ads, and print media ads/campaigns that helped break out the record label and its acts. We designed and tailored a unique marketing approach that helped reach the target fan base successfully.</p>
+				</div>
+			</div>
+		</div>-->
+		<div class='content-wrap'>
+			<div class="contain single-item">
+				<div class='row  content-item'>
+					<div class="col m6 s6 image-wrap"><img src='./assets/images/1073Records.jpg'>
+						<div class="desc black effect1">
+							<p class="black">VGS handled promotion and marketing for the music label 1073 Records and its associated acts. Online/Digital Marketing, radio plug ins/ads, TV ads, and print media ads/campaigns that helped break out the record label and its acts. We designed and tailored a unique marketing approach that helped reach the target fan base successfully.</p>
+						</div>
+					</div>
+					<div class='col m6 s6'>
+						<h2 class="header">1073: Marketing and Promotion</h2>
+					</div>
+
+				</div>
+				<div class='row  content-item'>
+					<div class="col m6 s6 image-wrap"><img src='./assets/images/Fusabo%201.jpg'>
+						<div class="desc white effect1">
+							<p>VGS is currently partnering with Fusabo to help introduce this sports app to the market. From an in-depth market analysis, to product profitability analysis, to designing a marketing program for the target customer base reach, we are the 360 degree service providers to our partners.  </p>
+						</div>
+					</div>
+					<div class='col m6 s6'>
+						<h2 class="header">Fusabo App: Market analysis, app marketing, app launch</h2>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
 	</main>
 	<footer class="footer contain">
 		<div class='copyright'>
-			<p>&copy; 2019 vecchia Global Services.</p>
+			<p><span class="">&copy;</span> 2019 vecchia Global Services.</p>
 		</div>
 	</footer>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+			$('.single-item').slick({
+				dots: false,
+				fade: true,
+				cssEase: 'linear'
+			});
+		});
+	</script>
 </body>
 
 </html>

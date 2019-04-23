@@ -22,6 +22,7 @@ body {
 	-o-background-size:cover;
 	background-size: cover;
 	background-position: center;
+	background-color: black;
 }
 .effect1{
     -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -56,7 +57,7 @@ h6,
 p {
 
 	color: #FFFFFF;
-	mix-blend-mode: difference;
+	/*mix-blend-mode: difference;*/
 }
 
 .black-back a,
@@ -80,7 +81,7 @@ p {
 
 main {
 	flex: 1 0 auto;
-	margin-top: 2%;
+	
 	position: relative;
 }
 
@@ -142,9 +143,10 @@ nav li {}
 .menu a{
 	font-family: 'Noto Serif', serif;
 	font-weight: lighter;
-	font-size: 15px;
-	line-height: 60px;
+	font-size: 13px;
+	line-height: 40px;
 	letter-spacing: 0.62px;
+	
 }
 
 .menu-item::after {
@@ -182,11 +184,12 @@ nav li {}
 	font-family: 'Crete Round', serif;
 	color: #FFFFFF;
 	letter-spacing: 1px;
+	font-size: 40px;
 
 }
 
 #vp p {
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 
@@ -292,6 +295,15 @@ input, textarea{
 	
 	
 }
+.contact .left-out{
+	position: relative;
+	
+		
+}
+.contact .left{
+	position: absolute;
+	transform: translate(0, 50%);
+}
 .contact h4, .contact h6{
 	font-weight: 700;
 	font-family: 'Noto Serif', serif;
@@ -345,14 +357,19 @@ button{
 	background-position: center;
 }*/
 .project{
-	background-color: #E3e3e3;
+	background-image: url(../assets/images/project2cut.jpg);
+	opacity: 100%;
 }
-
- 
+.menu-it:hover{
+	text-decoration: underline;
+}
+.content-wrap{
+	height: 80vh;
+}
 .right,.left{
 	
 }
- .desc p{
+ .desc {
 	font-family: 'Noto Serif', serif;
 	
 	letter-spacing: 1px;
@@ -360,22 +377,69 @@ button{
 .project-content-list{
 	
 }
+
 .project img{
-	width: 450px;
-	height: 400px;
+	width: 400px;
+	height: 350px;
+}
+.image-wrap{
+	position: relative;
+	
+	
+}
+.single-item{
+	min-height:80vh!important;
+}
+.content-item{
+	min-height: 80vh;
+}
+
+.desc{
+	position: absolute;
+	top:70%;
+	left:50%;
+	min-height: 0%;
+	padding: 10px
+}
+.desc p{
+	mix-blend-mode: difference;
+	font-size: 13px;
+	font-family: 'Roboto Mono', monospace!important;
 }
 .project-content .header{
 	font-family: 'Crete Round', serif;
 	
-	color: #000000;
+	transform: translate(-20%, -50%);
 	font-size: 25px;
 }
 .company-img{
 	
 	width: 100%;
 }
-
-
+/*carousel*/
+.carousel-wrap{
+	padding-left:2%;
+}
+.slick-next,.slick-prev{
+	background-color: transparent!important;
+	color: white;
+	position: absolute;
+	z-index: 7;
+	mix-blend-mode: difference;
+	
+}
+.slick-next{
+	right: 0;
+	top:50%;
+	
+		
+}
+.slick-prev{
+	right: 5%;
+	top:50%;
+	
+		
+}
 
 
 
@@ -387,7 +451,13 @@ button{
 /**copyright**/
 .copyright p {
 	font-family: 'Roboto Mono', monospace;
+	font-size: 13px;
+	
 }
+.copyright span{
+	font-size: 22px;
+}
+
 
 
 /****************************************************************
@@ -442,8 +512,19 @@ button{
 	.contact h4, .contact p, .contact a{
 		color: black;
 	}
+	.about .centering{
+		height: 80vh;
+		
+	}
+	.slick-next,.slick-prev{
+		visibility: hidden;
+	}
+	.project-content .header{
+	font-family: 'Crete Round', serif;
 	
-	
+	transform: translate(0, 0);
+	font-size: 25px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
