@@ -12,6 +12,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	
 }
 .background-cover{
 	height: 100vh;
@@ -209,8 +210,12 @@ nav li {}
 .service-content-title{
 	font-family: 'Crete Round', serif;
 }
-.service-content-description{
+.service-group a, .service-group-summary{
 	font-family: 'Roboto Mono', monospace!important;
+	
+}
+.service-group li{
+	margin-bottom: 2%;
 }
 /*.service-group:hover{
 	border: 1px solid white;
@@ -268,7 +273,8 @@ nav li {}
 }
 /**CONTACT**/
 .contact{
-	background-image: url(../assets/images/contact.png);
+	background-image: url(../assets/images/arch2.jpg);
+	
 }
 form{
 	width:600px;
@@ -277,31 +283,49 @@ form{
 
 input, textarea{
 	
-	background:  rgba(245, 245, 245, 0.8)!important;
+	/*background:  rgba(245, 245, 245, 0.8)!important;
 	border: 1px solid black!important;
 	padding-left: 20px!important;
-	padding-top: 20px;
+	padding-top: 20px;*/
 	 
 	
 	
 	
 }
-.contact h4{
+.contact h4, .contact h6{
 	font-weight: 700;
 	font-family: 'Noto Serif', serif;
 }
 .input-field input:focus {
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 }
 
 .input-field input[type=text],
 .input-field input[type=tel],
 .input-field input[type=email],
-textarea {
+textarea,label, .contact p {
 	font-family: 'Roboto Mono', monospace!important;
+	color: white;
+}
+  /* label color */
+   .input-field label {
+     color: #ffffff;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label,.input-field input[type=email]:focus + label,.input-field textarea:focus + label {
+     color: #ffffff!important;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus,.input-field input[type=email]:focus,.input-field textarea:focus{
+     border-bottom: 1px solid #ffffff!important;
+     box-shadow: 0 1px 0 0 #ffffff!important;
+   }
+.left{
+	margin: 0 auto;
+	
 }
 textarea{
-	width: 600px;
+	
 	min-height: 150px; 
 }
 
@@ -309,6 +333,7 @@ button{
 	background-color: black!important;
 	font-family: 'Roboto Mono', monospace!important;
 }
+
 /**PROJECTS*/
 /*.project {
 	background-image: url(../assets/images/project.jpg);
@@ -411,8 +436,7 @@ button{
 	
 }
 	textarea{
-	width: 105%;
-	min-height: 150px; 
+	
 		
 }
 	.contact h4, .contact p, .contact a{

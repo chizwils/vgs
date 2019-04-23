@@ -2,11 +2,11 @@
 <html>
 
 <head>
-	
+
 	<title>Contact Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
-        <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 	<!-- Compiled and minified CSS -->
@@ -19,20 +19,21 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script >
-		 $(document).ready(function(){
-    $('.sidenav').sidenav();
-			 $('.modal').modal();
-  });
+	<script>
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+			$('.modal').modal();
+		});
+
 	</script>
 	<link rel="stylesheet" href="css/style.css">
-	
+
 
 </head>
 
-<body class='contact background-cover black-back'>
+<body class='contact background-cover '>
 	<header class=''>
-		
+
 		<!--NAV BEGINS----->
 		<nav class="transparent">
 			<div class="nav-wrapper contain ">
@@ -42,20 +43,20 @@
 					<li><a href="index.html" class="menu-item">Home</a></li>
 					<li><a href="about.html" class="menu-item">About Us</a></li>
 					<li><a href="service.html" class="menu-item">Capabilities</a></li>
-					<li><a href="project.html"class="menu-item">Projects</a></li>
-					<li><a href="career.html"class="menu-item">Careers</a></li>
-					<li><a href="#"class="menu-item active">Contact Us</a></li>
+					<li><a href="project.html" class="menu-item">Projects</a></li>
+					<li><a href="career.html" class="menu-item">Careers</a></li>
+					<li><a href="#" class="menu-item active">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!---SIDE NAV---->
 		<ul class="sidenav transparent" id="mobile-demo">
 			<li><a href="index.html" class="menu-item">Home</a></li>
-					<li><a href="about.html" class="menu-item">About Us</a></li>
-					<li><a href="service.html" class="menu-item">Capabilities</a></li>
-					<li><a href="project.html"class="menu-item">Projects</a></li>
-					<li><a href="career.html"class="menu-item">Careers</a></li>
-					<li><a href="#"class="menu-item active">Contact Us</a></li>
+			<li><a href="about.html" class="menu-item">About Us</a></li>
+			<li><a href="service.html" class="menu-item">Capabilities</a></li>
+			<li><a href="project.html" class="menu-item">Projects</a></li>
+			<li><a href="career.html" class="menu-item">Careers</a></li>
+			<li><a href="#" class="menu-item active">Contact Us</a></li>
 		</ul>
 		<!-- NAV ENDS ----->
 
@@ -63,13 +64,57 @@
 	<main class="contents contain">
 		<div id='' class="contain">
 			<h4 class="center ">Let us know how we can help you reach your goals.</h4>
-			<form class='row'>
+			<!--<form class='row'>
 				<div class="col s12 input-field"><input type='text' placeholder="Full Name"></div>
 				<div class="col s12 input-field"><input type="email" placeholder="Email"></div>
 				<div class="col s12 input-field"><textarea type='text' placeholder="Message..."></textarea></div>
 				<div class="col s12 center"><button class="btn ">Send Message</button></div>
 						 
-			</form>
+			</form>-->
+			<div class="row">
+				<div class='col s12 m6 '>
+					<div class="left"><div>
+						<h6>EMAIL:</h6>
+						<p>email@email.com</p>
+					</div>
+					<div>
+						<h6>TELEPHONE:</h6>
+						<p>123-313-9013</p>
+						</div></div>
+				</div>
+				<div class='col s12 m6'>
+					<div>
+						<div class="input-field col s12">
+							<input id="Full_Name" type="text" class="validate">
+							<label for="Full_Name">Name</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="organization" type="text" class="validate">
+							<label for="organnization">Organization</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="subject" type="text" class="validate">
+							<label for="subject">Subject</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field col s12">
+							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<label for="textarea1">Textarea</label>
+						</div>
+						<div>
+							<a class="btn submit black right">SEND MESSAGE</a>
+						</div>
+
+
+					</div>
+				</div>
+
+
+
+			</div>
 		</div>
 	</main>
 	<footer class="footer contain">
