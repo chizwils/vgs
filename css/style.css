@@ -263,7 +263,7 @@ nav li {}
 }
 /**ABOUT US**/
 .about{
-	background-image: url(../assets/images/aerial.jpg);
+	background-image: url(../assets/images/Home.png);
 	
 }
 .about .centering {
@@ -276,7 +276,7 @@ nav li {}
 }
 /**CONTACT**/
 .contact{
-	background-image: url(../assets/images/arch2.jpg);
+	background-image: url(../assets/images/aerial.jpg);
 	
 }
 form{
