@@ -13,6 +13,7 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 	
+	
 }
 .background-cover{
 	height: 100vh;
@@ -22,12 +23,13 @@ body {
 	-o-background-size:cover;
 	background-size: cover;
 	background-position: center;
-	background-color: black;
+	background-color:  #020202;
+	background-blend-mode: screen;
+	
 }
 .effect1{
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
 }
 .card-1{
 	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -65,6 +67,11 @@ p {
 .black-back h4 {
 	color: black !important;
 
+}
+.brand-logo {
+	background
+	: url(../assets/images/Vecchia.svg);
+ 
 }
 
 /****************************************************************
@@ -210,12 +217,16 @@ nav li {}
 	margin: 3%;
 	
 }
+.menu-it{
+	font-size: 13px;
+}
 .service-content-title{
 	font-family: 'Crete Round', serif;
+	font-size: 25px;
 }
 .service-group a, .service-group-summary{
 	font-family: 'Roboto Mono', monospace!important;
-	
+	font-size: 13px;
 }
 .service-group li{
 	margin-bottom: 2%;
@@ -228,14 +239,14 @@ nav li {}
 .service-group .title{
 	
 	font-family: 'Crete Round', serif;
-	font-size: 28px;
+	font-size: 18px;
 	letter-spacing: 0.9px;
 	
 }
 .service-group .summary{
 	min-height: 150px;
 	font-family: 'Roboto Mono', monospace!important;
-	font-size: 14px;
+	font-size: 10px;
 
 }
 .service-group .btn{
@@ -245,7 +256,7 @@ nav li {}
 }
 .intro h4{
 	font-family: 'Crete Round', serif;
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: 0.4px;
 }
 /**CAREERS**/
@@ -254,7 +265,7 @@ nav li {}
 }
 .career h4{
 	font-family: 'Crete Round', serif;
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: 0.4px;
 }
 .career p{
@@ -273,6 +284,51 @@ nav li {}
 	font-size: 16px;
 	font-weight: 300;
 	
+}
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color:transparent;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: white!important;
+	
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
 }
 /**CONTACT**/
 .contact{
@@ -307,6 +363,10 @@ input, textarea{
 .contact h4, .contact h6{
 	font-weight: 700;
 	font-family: 'Noto Serif', serif;
+	
+}
+.contact h4{
+	font-size: 25px;
 }
 .input-field input:focus {
 	/*border: 2px solid black;*/
@@ -341,8 +401,8 @@ textarea{
 	min-height: 150px; 
 }
 
-button{
-	background-color: black!important;
+button, .contact .btn{
+	background-color:  #020202!important;
 	font-family: 'Roboto Mono', monospace!important;
 }
 
@@ -381,13 +441,15 @@ button{
 .project img{
 	width: 400px;
 	height: 350px;
+	
 }
 .image-wrap{
 	position: relative;
 	
 	
+	
 }
-.single-item{
+.single-item,.gallery-cell{
 	min-height:80vh!important;
 }
 .content-item{
@@ -395,15 +457,16 @@ button{
 }
 
 .desc{
+	border-radius: 2px;
 	position: absolute;
 	top:70%;
 	left:50%;
 	min-height: 0%;
-	padding: 10px
+	padding: 5px;
 }
 .desc p{
 	mix-blend-mode: difference;
-	font-size: 13px;
+	font-size: 10px;
 	font-family: 'Roboto Mono', monospace!important;
 }
 .project-content .header{
@@ -420,14 +483,10 @@ button{
 .carousel-wrap{
 	padding-left:2%;
 }
-.slick-next,.slick-prev{
-	background-color: transparent!important;
-	color: white;
-	position: absolute;
-	z-index: 7;
-	mix-blend-mode: difference;
-	
+.gallery-cell{
+	width:100%;
 }
+
 .slick-next{
 	right: 0;
 	top:50%;

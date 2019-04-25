@@ -19,9 +19,13 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -113,10 +117,10 @@
 			</div>
 		</div>-->
 		<div class='content-wrap'>
-			<div class="contain single-item">
-				<div class='row  content-item'>
-					<div class="col m6 s6 image-wrap"><img src='./assets/images/1073Records.jpg'>
-						<div class="desc black effect1">
+			<div class="contain main-gallery">
+				<div class='row  gallery-cell'>
+					<div class="col m6 s6 image-wrap effect1"><img src='./assets/images/1073Records.jpg'>
+						<div class="desc black ">
 							<p class="black">VGS handled promotion and marketing for the music label 1073 Records and its associated acts. Online/Digital Marketing, radio plug ins/ads, TV ads, and print media ads/campaigns that helped break out the record label and its acts. We designed and tailored a unique marketing approach that helped reach the target fan base successfully.</p>
 						</div>
 					</div>
@@ -125,7 +129,7 @@
 					</div>
 
 				</div>
-				<div class='row  content-item'>
+				<div class='row  gallery-cell'>
 					<div class="col m6 s6 image-wrap"><img src='./assets/images/Fusabo%201.jpg'>
 						<div class="desc white effect1">
 							<p>VGS is currently partnering with Fusabo to help introduce this sports app to the market. From an in-depth market analysis, to product profitability analysis, to designing a marketing program for the target customer base reach, we are the 360 degree service providers to our partners.  </p>
@@ -147,13 +151,13 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script>
 		$(document).ready(function() {
 			$('.sidenav').sidenav();
-			$('.single-item').slick({
-				dots: false,
-				fade: true,
-				cssEase: 'linear'
+			$('.main-gallery').flickity({
+				
 			});
 		});
 	</script>
