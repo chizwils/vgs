@@ -8,6 +8,7 @@ html {
 	height: 100vh;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
+	font-size: 13px;
 }
 
 body {
@@ -78,7 +79,7 @@ p {
 
 .brand-logo {
 	background: url(../assets/images/Vecchia.svg);
-	
+
 
 }
 
@@ -90,7 +91,10 @@ p {
 
 .container {}
 
-#header {}
+#header {
+	height: 10vh !important;
+	margin-top: 0 !important;
+}
 
 #content {}
 
@@ -98,6 +102,7 @@ main {
 	flex: 1 0 auto;
 
 	position: relative;
+	height: 80vh;
 }
 
 #vp {
@@ -403,7 +408,7 @@ textarea {
 }
 
 .contact h4 {
-	font-size: 25px;
+	font-size: 1.9rem;
 }
 
 .input-field input:focus {
@@ -548,19 +553,7 @@ button,
 	width: 100%;
 }
 
-.slick-next {
-	right: 0;
-	top: 50%;
 
-
-}
-
-.slick-prev {
-	right: 5%;
-	top: 50%;
-
-
-}
 
 
 
@@ -572,7 +565,7 @@ button,
 /**copyright**/
 .copyright p {
 	font-family: 'Roboto Mono', monospace;
-	font-size: 13px;
+	font-size: 1rem;
 
 }
 
@@ -593,7 +586,7 @@ button,
 @media only screen and (max-width: 690px) {
 
 	html {
-		font-size: calc(13px + 5 * ((100vw - 320px) / 680));
+		font-size: 12px;
 	}
 
 	.contain {
@@ -609,12 +602,12 @@ button,
 		font-family: 'Crete Round', serif;
 		color: #FFFFFF;
 		letter-spacing: 1px;
-		font-size: 3rem;
+		font-size: 1.5rem;
 
 	}
 
 	#vp p {
-		font-size: 1.3rem;
+		font-size: 0.8rem;
 		font-family: 'Lato', sans-serif;
 		font-weight: 300;
 
@@ -632,15 +625,8 @@ button,
 	.contact p,
 	.contact a {}
 
-	.about .centering {
-		height: 80vh;
 
-	}
 
-	.slick-next,
-	.slick-prev {
-		visibility: hidden;
-	}
 
 	.project-content .header {
 		font-family: 'Crete Round', serif;
@@ -648,76 +634,140 @@ button,
 		transform: translate(0, 0);
 		font-size: 25px;
 	}
-	/**CONTACT**/
-.contact{
-	background-image: url(../assets/images/cellphone.jpg);
-	
+
+	/***NAV***/
+	nav {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+		height: 5vh !important;
+	}
+
+	.sidenav a {
+		font-size:1rem!important;
+	}
+	/**ABOUT US**/
+
+.about .centering {
+	width: 80%;
+
+	font-family: 'Roboto Mono', monospace !important;
+	font-size: 1rem;
+	font-weight: 300;
+
 }
-form{
-	width:600px;
-	font-family: 'Roboto Mono', monospace!important;
+	
+/**SERVICES**/
+
+
+.menu-it {
+	font-size: 13px;
 }
 
-input, textarea{
-	
-	/*background:  rgba(245, 245, 245, 0.8)!important;
-	border: 1px solid black!important;
-	padding-left: 20px!important;
-	padding-top: 20px;*/
-	 
-	
-	
-	
+.service-content-title {
+	font-family: 'Crete Round', serif;
+	font-size: 1.7rem;
 }
-.contact .left-out{
-	position: relative;
-	
-		
+
+.service-group a,
+.service-group-summary {
+	font-family: 'Roboto Mono', monospace !important;
+	font-size: 0.9rem;
 }
-.contact .left{
-	position: relative;
-	transform: translate(0, 0);
+
+.service-group li {
+	margin-bottom: 2%;
 }
-.contact h4, .contact h6{
-	font-weight: 700;
-	font-family: 'Noto Serif', serif;
-	
+
+
+
+.intro h4 {
+	font-family: 'Crete Round', serif;
+	font-size: 1.7rem;
+	letter-spacing: 0.4px;
 }
-.contact h4{
-	font-size: 13px;
-	width: 100vw;
+/**CAREERS**/
+
+
+.career h4 {
+	font-family: 'Crete Round', serif;
+	font-size: 1.7rem;
+	letter-spacing: 0.2px;
 }
-	.contact h6{
+
+.career p {
+	font-family: 'Roboto Mono', monospace !important;
+	font-size: 0.7rem;
+}
+	/**CONTACT**/
+	.contact {
+		background-image: url(../assets/images/cellphone.jpg);
+
+	}
+
+	form {
+
+		font-family: 'Roboto Mono', monospace !important;
+	}
+
+
+	.contact .left-out {
+		position: relative;
+
+
+	}
+
+	.contact .left {}
+
+	.contact h4,
+	.contact h6 {
+		font-weight: 700;
+		font-family: 'Noto Serif', serif;
+
+	}
+
+	.contact h4 {
+		font-size: 13px;
+		width: 100vw;
+	}
+
+	.contact h6 {
 		font-size: 10px;
 	}
-	.left-out p{
+
+	.left-out p {
 		font-size: 8px;
 	}
-.input-field input:focus {
-	/*border: 2px solid black;*/
-}
 
-.input-field input[type=text],
-.input-field input[type=tel],
-.input-field input[type=email],
-textarea,label, .contact p {
-	font-family: 'Roboto Mono', monospace!important;
-	color: white;
-}
+	.input-field input:focus {
+		/*border: 2px solid black;*/
+	}
 
-.left{
-	margin: 0 auto;
-	
-}
-textarea{
-	
-	min-height: 150px; 
-}
+	.input-field input[type=text],
+	.input-field input[type=tel],
+	.input-field input[type=email],
+	textarea,
+	label,
+	.contact p {
+		font-family: 'Roboto Mono', monospace !important;
+		color: white;
+	}
 
-button, .contact .btn{
-	background-color:  #020202!important;
-	font-family: 'Roboto Mono', monospace!important;
-}
+	.left {
+		margin: 0 auto;
+
+	}
+
+	textarea {
+
+		min-height: 150px;
+	}
+
+	button,
+	.contact .btn {
+		background-color: #020202 !important;
+		font-family: 'Roboto Mono', monospace !important;
+	}
 
 }
 
