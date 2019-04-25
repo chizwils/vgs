@@ -6,51 +6,56 @@
 
 html {
 	height: 100vh;
-	-webkit-transition: all 0.3s ease-out; 
-            transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	
-	
+
+
 }
-.background-cover{
+
+.background-cover {
 	height: 100vh;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size:cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	background-color:  #020202;
+	background-color: #020202;
 	background-blend-mode: screen;
-	
+
 }
-.effect1{
-    -webkit-filter: drop-shadow(5px 5px 5px #222 );
-  filter: drop-shadow(5px 5px 5px #222);
+
+.effect1 {
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
 }
-.card-1{
-	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	
+
+.card-1 {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
 }
+
 /****MODAL****/
 .modal::-webkit-scrollbar {
-    width: 1em;
+	width: 1em;
 }
- 
+
 .modal::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 .modal::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
 }
+
 /****MODAL-END****/
 a,
 h1,
@@ -70,10 +75,11 @@ p {
 	color: black !important;
 
 }
+
 .brand-logo {
-	background
-	: url(../assets/images/Vecchia.svg);
- 
+	background: url(../assets/images/Vecchia.svg);
+	
+
 }
 
 /****************************************************************
@@ -90,7 +96,7 @@ p {
 
 main {
 	flex: 1 0 auto;
-	
+
 	position: relative;
 }
 
@@ -146,16 +152,17 @@ nav li {}
 	font-size: 15px;
 	line-height: 60px;
 	letter-spacing: 0.62px;
-	color: white!important;
+	color: white !important;
 
 }
-.menu a{
+
+.menu a {
 	font-family: 'Noto Serif', serif;
 	font-weight: lighter;
 	font-size: 13px;
 	line-height: 40px;
 	letter-spacing: 0.62px;
-	
+
 }
 
 .menu-item::after {
@@ -166,12 +173,15 @@ nav li {}
 	background: #fff;
 	transition: width .3s;
 }
-.black-back .menu-item::after{
+
+.black-back .menu-item::after {
 	background: black;
 }
-.black-back .sidenav .menu-item::after{
+
+.black-back .sidenav .menu-item::after {
 	background: white;
 }
+
 .menu-item:hover::after,
 .active::after {
 	width: 100%;
@@ -185,7 +195,7 @@ nav li {}
 /**HOME**/
 .home {
 	background-image: url(../assets/images/Home.png);
-	
+
 
 }
 
@@ -205,134 +215,440 @@ nav li {}
 }
 
 /**SERVICES**/
-.service{
+.service {
 	background-image: url(../assets/images/service.png)
 }
-.service .centering{
+
+.service .centering {
 	width: 90%;
-	position: relative!important;
+	position: relative !important;
 }
-.service-content{
+
+.service-content {
 	width: 80%;
 	height: 50%;
 	padding: 20px;
 	margin: 3%;
-	
+
 }
-.menu-it{
+
+.menu-it {
 	font-size: 13px;
 }
-.service-content-title{
+
+.service-content-title {
 	font-family: 'Crete Round', serif;
 	font-size: 25px;
 }
-.service-group a, .service-group-summary{
-	font-family: 'Roboto Mono', monospace!important;
+
+.service-group a,
+.service-group-summary {
+	font-family: 'Roboto Mono', monospace !important;
 	font-size: 13px;
 }
-.service-group li{
+
+.service-group li {
 	margin-bottom: 2%;
 }
+
 /*.service-group:hover{
 	border: 1px solid white;
 	padding: 20px;
 	 box-shadow: 0 10px 6px -6px #777;
 }*/
-.service-group .title{
-	
+.service-group .title {
+
 	font-family: 'Crete Round', serif;
 	font-size: 18px;
 	letter-spacing: 0.9px;
-	
+
 }
-.service-group .summary{
+
+.service-group .summary {
 	min-height: 150px;
-	font-family: 'Roboto Mono', monospace!important;
+	font-family: 'Roboto Mono', monospace !important;
 	font-size: 10px;
 
 }
-.service-group .btn{
-	border: 1px solid #FFFFFF!important;
-	background-color: transparent!important;
-	font-family: 'Roboto Mono', monospace!important;
+
+.service-group .btn {
+	border: 1px solid #FFFFFF !important;
+	background-color: transparent !important;
+	font-family: 'Roboto Mono', monospace !important;
 }
-.intro h4{
+
+.intro h4 {
 	font-family: 'Crete Round', serif;
 	font-size: 25px;
 	letter-spacing: 0.4px;
 }
+
 /**CAREERS**/
-.career{
+.career {
 	background-image: url(../assets/images/career.png);
 }
-.career h4{
+
+.career h4 {
 	font-family: 'Crete Round', serif;
 	font-size: 25px;
 	letter-spacing: 0.4px;
 }
-.career p{
-	font-family: 'Roboto Mono', monospace!important;
+
+.career p {
+	font-family: 'Roboto Mono', monospace !important;
 	font-size: 14px;
 }
+
 /**ABOUT US**/
-.about{
+.about {
 	background-image: url(../assets/images/Home.png);
-	
+
 }
+
 .about .centering {
 	width: 80%;
-	
-	font-family: 'Roboto Mono', monospace!important;
+
+	font-family: 'Roboto Mono', monospace !important;
 	font-size: 16px;
 	font-weight: 300;
-	
+
 }
+
 /* ---- flickity-button ---- */
 
 .flickity-button {
-  position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
-  border: none;
-  color:transparent;
+	position: absolute;
+	background: hsla(0, 0%, 100%, 0.75);
+	border: none;
+	color: transparent;
 }
 
 .flickity-button:hover {
-  background: white;
-  cursor: pointer;
+	background: white;
+	cursor: pointer;
 }
 
 .flickity-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #19F;
+	outline: none;
+	box-shadow: 0 0 0 5px #19F;
 }
 
 .flickity-button:active {
-  opacity: 0.6;
+	opacity: 0.6;
 }
 
 .flickity-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-  /* prevent disabled button from capturing pointer up event. #716 */
-  pointer-events: none;
+	opacity: 0.3;
+	cursor: auto;
+	/* prevent disabled button from capturing pointer up event. #716 */
+	pointer-events: none;
 }
 
 .flickity-button-icon {
-  fill: white!important;
-	
+	fill: white !important;
+
 }
 
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  /* vertically center */
-  transform: translateY(-50%);
+	top: 50%;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	/* vertically center */
+	transform: translateY(-50%);
 }
+
 /**CONTACT**/
+.contact {
+	background-image: url(../assets/images/cellphone.jpg);
+
+}
+
+form {
+	width: 600px;
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+input,
+textarea {
+
+	/*background:  rgba(245, 245, 245, 0.8)!important;
+	border: 1px solid black!important;
+	padding-left: 20px!important;
+	padding-top: 20px;*/
+
+
+
+
+}
+
+.contact .left-out {
+	position: relative;
+
+
+}
+
+.contact .left {
+	position: absolute;
+	transform: translate(0, 50%);
+}
+
+.contact h4,
+.contact h6 {
+	font-weight: 700;
+	font-family: 'Noto Serif', serif;
+
+}
+
+.contact h4 {
+	font-size: 25px;
+}
+
+.input-field input:focus {
+	/*border: 2px solid black;*/
+}
+
+.input-field input[type=text],
+.input-field input[type=tel],
+.input-field input[type=email],
+textarea,
+label,
+.contact p {
+	font-family: 'Roboto Mono', monospace !important;
+	color: white;
+}
+
+/* label color */
+.input-field label {
+	color: #ffffff;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea:focus + label {
+	color: #ffffff !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+	border-bottom: 1px solid #ffffff !important;
+	box-shadow: 0 1px 0 0 #ffffff !important;
+}
+
+.left {
+	margin: 0 auto;
+
+}
+
+textarea {
+
+	min-height: 150px;
+}
+
+button,
+.contact .btn {
+	background-color: #020202 !important;
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+/**PROJECTS*/
+/*.project {
+	background-image: url(../assets/images/project.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}*/
+.project {
+	background-image: url(../assets/images/protein.jpg);
+	opacity: 100%;
+}
+
+.menu-it:hover {
+	text-decoration: underline;
+}
+
+.content-wrap {
+	height: 80vh;
+}
+
+.right,
+.left {}
+
+.desc {
+	font-family: 'Noto Serif', serif;
+
+	letter-spacing: 1px;
+}
+
+.project-content-list {}
+
+.project img {
+	width: 400px;
+	height: 350px;
+
+}
+
+.image-wrap {
+	position: relative;
+
+
+
+}
+
+.single-item,
+.gallery-cell {
+	min-height: 80vh !important;
+}
+
+.content-item {
+	min-height: 80vh;
+}
+
+.desc {
+	border-radius: 2px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	min-height: 0%;
+	padding: 5px;
+}
+
+.desc p {
+	mix-blend-mode: difference;
+	font-size: 10px;
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.project-content .header {
+	font-family: 'Crete Round', serif;
+
+	transform: translate(-20%, -50%);
+	font-size: 25px;
+}
+
+.company-img {
+
+	width: 100%;
+}
+
+/*carousel*/
+.carousel-wrap {
+	padding-left: 2%;
+}
+
+.gallery-cell {
+	width: 100%;
+}
+
+.slick-next {
+	right: 0;
+	top: 50%;
+
+
+}
+
+.slick-prev {
+	right: 5%;
+	top: 50%;
+
+
+}
+
+
+
+/****************************************************************
+ 
+-------------------- FOOTER  & COPYRIGHT-------------------------
+ 
+****************************************************************/
+/**copyright**/
+.copyright p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 13px;
+
+}
+
+.copyright span {
+	font-size: 22px;
+}
+
+
+
+/****************************************************************
+ 
+-------------------- MEDIA QUERY -----------------------------
+ 
+****************************************************************/
+/**** RESPONSIVE ******/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 690px) {
+
+	html {
+		font-size: calc(13px + 5 * ((100vw - 320px) / 680));
+	}
+
+	.contain {
+		margin-left: 3px;
+		margin-right: 9px;
+	}
+
+
+	/**HOME**/
+
+
+	#vp h1 {
+		font-family: 'Crete Round', serif;
+		color: #FFFFFF;
+		letter-spacing: 1px;
+		font-size: 3rem;
+
+	}
+
+	#vp p {
+		font-size: 1.3rem;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+
+	}
+
+
+
+	form {
+		width: 100%;
+
+
+	}
+
+	.contact h4,
+	.contact p,
+	.contact a {}
+
+	.about .centering {
+		height: 80vh;
+
+	}
+
+	.slick-next,
+	.slick-prev {
+		visibility: hidden;
+	}
+
+	.project-content .header {
+		font-family: 'Crete Round', serif;
+
+		transform: translate(0, 0);
+		font-size: 25px;
+	}
+	/**CONTACT**/
 .contact{
 	background-image: url(../assets/images/cellphone.jpg);
 	
@@ -359,8 +675,8 @@ input, textarea{
 		
 }
 .contact .left{
-	position: absolute;
-	transform: translate(0, 50%);
+	position: relative;
+	transform: translate(0, 0);
 }
 .contact h4, .contact h6{
 	font-weight: 700;
@@ -368,8 +684,15 @@ input, textarea{
 	
 }
 .contact h4{
-	font-size: 25px;
+	font-size: 13px;
+	width: 100vw;
 }
+	.contact h6{
+		font-size: 10px;
+	}
+	.left-out p{
+		font-size: 8px;
+	}
 .input-field input:focus {
 	/*border: 2px solid black;*/
 }
@@ -381,19 +704,7 @@ textarea,label, .contact p {
 	font-family: 'Roboto Mono', monospace!important;
 	color: white;
 }
-  /* label color */
-   .input-field label {
-     color: #ffffff;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label,.input-field input[type=email]:focus + label,.input-field textarea:focus + label {
-     color: #ffffff!important;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus,.input-field input[type=email]:focus,.input-field textarea:focus{
-     border-bottom: 1px solid #ffffff!important;
-     box-shadow: 0 1px 0 0 #ffffff!important;
-   }
+
 .left{
 	margin: 0 auto;
 	
@@ -408,191 +719,10 @@ button, .contact .btn{
 	font-family: 'Roboto Mono', monospace!important;
 }
 
-/**PROJECTS*/
-/*.project {
-	background-image: url(../assets/images/project.jpg);
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center;
-}*/
-.project{
-	background-image: url(../assets/images/protein.jpg);
-	opacity: 100%;
-}
-.menu-it:hover{
-	text-decoration: underline;
-}
-.content-wrap{
-	height: 80vh;
-}
-.right,.left{
-	
-}
- .desc {
-	font-family: 'Noto Serif', serif;
-	
-	letter-spacing: 1px;
-}
-.project-content-list{
-	
-}
-
-.project img{
-	width: 400px;
-	height: 350px;
-	
-}
-.image-wrap{
-	position: relative;
-	
-	
-	
-}
-.single-item,.gallery-cell{
-	min-height:80vh!important;
-}
-.content-item{
-	min-height: 80vh;
-}
-
-.desc{
-	border-radius: 2px;
-	position: absolute;
-	top:70%;
-	left:50%;
-	min-height: 0%;
-	padding: 5px;
-}
-.desc p{
-	mix-blend-mode: difference;
-	font-size: 10px;
-	font-family: 'Roboto Mono', monospace!important;
-}
-.project-content .header{
-	font-family: 'Crete Round', serif;
-	
-	transform: translate(-20%, -50%);
-	font-size: 25px;
-}
-.company-img{
-	
-	width: 100%;
-}
-/*carousel*/
-.carousel-wrap{
-	padding-left:2%;
-}
-.gallery-cell{
-	width:100%;
-}
-
-.slick-next{
-	right: 0;
-	top:50%;
-	
-		
-}
-.slick-prev{
-	right: 5%;
-	top:50%;
-	
-		
-}
-
-
-
-/****************************************************************
- 
--------------------- FOOTER  & COPYRIGHT-------------------------
- 
-****************************************************************/
-/**copyright**/
-.copyright p {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 13px;
-	
-}
-.copyright span{
-	font-size: 22px;
-}
-
-
-
-/****************************************************************
- 
--------------------- MEDIA QUERY -----------------------------
- 
-****************************************************************/
-/**** RESPONSIVE ******/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 690px) {
-
-	html {
-		font-size: calc(13px + 5 * ((100vw - 320px) / 680));
-	}
-
-	.contain{
-		margin-left:3px;
-		margin-right: 9px;
-	}
-	
-	
-	/**HOME**/
-
-
-#vp h1 {
-	font-family: 'Crete Round', serif;
-	color: #FFFFFF;
-	letter-spacing: 1px;
-	font-size: 3rem;
-
-}
-
-#vp p {
-	font-size: 1.3rem;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-
-}
-	
-
-	
-	form{
-	width:100%;
-		
-	
-}
-	textarea{
-	
-		
-}
-	.contact h4, .contact p, .contact a{
-		color: black;
-	}
-	.about .centering{
-		height: 80vh;
-		
-	}
-	.slick-next,.slick-prev{
-		visibility: hidden;
-	}
-	.project-content .header{
-	font-family: 'Crete Round', serif;
-	
-	transform: translate(0, 0);
-	font-size: 25px;
-}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
