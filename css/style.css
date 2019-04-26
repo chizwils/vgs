@@ -9,13 +9,15 @@ html {
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	font-size: 13px;
+	background-color: black;
+	
 }
 
 body {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
-
+	
 
 }
 
@@ -31,19 +33,6 @@ body {
 	background-color: #020202;
 	background-blend-mode: screen;
 	
-	
-
-}
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1);
-		transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(2);
-		transform: scale(2);
-    }
-
 }
 
 .effect1 {
@@ -128,7 +117,7 @@ main {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-55%, -70%);
 }
 
 footer {
@@ -337,51 +326,7 @@ nav li {}
 
 }
 
-/* ---- flickity-button ---- */
 
-.flickity-button {
-	position: absolute;
-	background: hsla(0, 0%, 100%, 0.75);
-	border: none;
-	color: transparent;
-}
-
-.flickity-button:hover {
-	background: white;
-	cursor: pointer;
-}
-
-.flickity-button:focus {
-	outline: none;
-	box-shadow: 0 0 0 5px #19F;
-}
-
-.flickity-button:active {
-	opacity: 0.6;
-}
-
-.flickity-button:disabled {
-	opacity: 0.3;
-	cursor: auto;
-	/* prevent disabled button from capturing pointer up event. #716 */
-	pointer-events: none;
-}
-
-.flickity-button-icon {
-	fill: white !important;
-
-}
-
-/* ---- previous/next buttons ---- */
-
-.flickity-prev-next-button {
-	top: 50%;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	/* vertically center */
-	transform: translateY(-50%);
-}
 
 /**CONTACT**/
 .contact {
@@ -499,12 +444,20 @@ button,
 	letter-spacing: 1px;
 }
 
-.project-content-list {}
+.project-content-item {
+	
+	height: 60vh;
+	padding: 10px;
+}
 
-.project img {
+.project-img {
 	width: 400px;
 	height: 350px;
 
+}
+.project-img img{
+	width: 100%;
+	height: auto;
 }
 
 .image-wrap {
@@ -514,10 +467,10 @@ button,
 
 }
 
-.single-item,
+/*.single-item,
 .gallery-cell {
 	min-height: 80vh !important;
-}
+}*/
 
 .content-item {
 	min-height: 80vh;
@@ -525,29 +478,84 @@ button,
 
 .desc {
 	border-radius: 2px;
-	position: absolute;
-	top: 70%;
-	left: 50%;
+	
 	
 	padding: 5px;
 }
 
 .desc p {
 	mix-blend-mode: difference;
-	font-size: 10px;
+	font-size: 1rem;
 	font-family: 'Roboto Mono', monospace !important;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .project-content .header {
 	font-family: 'Crete Round', serif;
 
-	transform: translate(-20%, -50%);
+	
 	font-size: 25px;
 }
 
 .company-img {
 
 	width: 100%;
+}
+/* ---- flickity-button ---- */
+
+.flickity-button {
+	position: absolute;
+	background: hsla(0, 0%, 100%, 0.75);
+	border: none;
+	color: transparent;
+}
+
+.flickity-button:hover {
+	background: white;
+	cursor: pointer;
+}
+
+.flickity-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+	opacity: 0.6;
+}
+
+.flickity-button:disabled {
+	opacity: 0.3;
+	cursor: auto;
+	/* prevent disabled button from capturing pointer up event. #716 */
+	pointer-events: none;
+}
+
+.flickity-button-icon {
+	fill: white !important;
+
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+	top: 50%;
+	width: 20px;
+	height: 44px;
+	border-radius: 0%;
+	/* vertically center */
+	transform: translateY(-10%);
+}
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: white;
+  border-radius: 10%;
+  opacity: 0.25;
+  cursor: pointer;
 }
 
 /*carousel*/
@@ -557,6 +565,7 @@ button,
 
 .gallery-cell {
 	width: 100%;
+	height: ;
 }
 
 
