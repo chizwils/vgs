@@ -86,33 +86,33 @@
 					</div>
 				</div>
 				<div class='col s12 m6'>
-					<div>
+					<form action="contact.php" method='POST'>
 						<div class="input-field col s12">
-							<input id="Full_Name" type="text" class="validate">
+							<input id="Full_Name" type="text" name='name'class="validate">
 							<label for="Full_Name">Name</label>
 						</div>
 						<div class="input-field col s12">
-							<input id="organization" type="text" class="validate">
+							<input id="organization" type="text" name='Organization'class="validate">
 							<label for="organnization">Organization</label>
 						</div>
 						<div class="input-field col s12">
-							<input id="subject" type="text" class="validate">
+							<input id="subject" type="text" class="validate" name='subject'>
 							<label for="subject">Subject</label>
 						</div>
 						<div class="input-field col s12">
-							<input id="email" type="email" class="validate">
+							<input id="email" type="email" class="validate" name='email'>
 							<label for="email">Email</label>
 						</div>
 						<div class="input-field col s12">
-							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
 							<label for="textarea1">Message...</label>
 						</div>
 						<div>
-							<a class="btn   right " type="submit">SEND MESSAGE</a>
+							<button class="btn   right " type="submit" name='action'value='send'>SEND MESSAGE</button>
 						</div>
 
 
-					</div>
+					</form>
 				</div>
 
 
