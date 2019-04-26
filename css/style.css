@@ -131,7 +131,11 @@ main {
 	transform: translate(-50%, -50%);
 }
 
-footer {}
+footer {
+	position:fixed;
+	bottom: 0;
+	width: 100vw;
+}
 
 
 
