@@ -9,15 +9,15 @@ html {
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	font-size: 13px;
-	background-color: black;
-	
+	background-color: #060607;
+
 }
 
 body {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
-	
+
 
 }
 
@@ -32,7 +32,7 @@ body {
 	background-position: center;
 	background-color: #020202;
 	background-blend-mode: screen;
-	
+
 }
 
 .effect1 {
@@ -86,6 +86,7 @@ p {
 
 }
 
+
 /****************************************************************
  
 -------------------- MAIN STRUCTURE -----------------------------
@@ -99,13 +100,15 @@ p {
 	margin-top: 0 !important;
 }
 
-#content {}
+.contents {
+	margin-top:5%;
+}
 
 main {
 	flex: 1 0 auto;
 
 	position: relative;
-	height: 80vh;
+	min-height: 80vh;
 }
 
 #vp {
@@ -121,9 +124,10 @@ main {
 }
 
 footer {
-	position:fixed;
+	position: fixed;
 	bottom: 0;
 	width: 100vw;
+	mix-blend-mode: difference;
 }
 
 
@@ -228,7 +232,28 @@ nav li {}
 
 /**SERVICES**/
 .service {
-	background-image: url(../assets/images/service.png)
+	
+}
+.service .intro {
+
+	display: inline-block;
+	padding: 10px;
+	
+	position: absolute;
+	top: 50%;
+
+
+
+}
+.service header {
+	background-image: url(../assets/images/service.png);
+	min-height: 80vh !important;
+	
+	position: relative;
+}
+.service .intro h1 {
+	margin: 0;
+	font-family: 'Crete Round', serif;
 }
 
 .service .centering {
@@ -245,12 +270,12 @@ nav li {}
 }
 
 .menu-it {
-	font-size: 13px;
+	font-size: 1rem;
 }
 
 .service-content-title {
 	font-family: 'Crete Round', serif;
-	font-size: 25px;
+	font-size:1.7rem;
 }
 
 .service-group a,
@@ -271,7 +296,7 @@ nav li {}
 .service-group .title {
 
 	font-family: 'Crete Round', serif;
-	font-size: 18px;
+	font-size: 2rem;
 	letter-spacing: 0.9px;
 
 }
@@ -279,7 +304,7 @@ nav li {}
 .service-group .summary {
 	min-height: 150px;
 	font-family: 'Roboto Mono', monospace !important;
-	font-size: 10px;
+	font-size: 17px;
 
 }
 
@@ -297,9 +322,29 @@ nav li {}
 
 /**CAREERS**/
 .career {
-	background-image: url(../assets/images/career.png);
+	
 }
+.career .intro {
 
+	display: inline-block;
+	padding: 10px;
+
+	position: absolute;
+	top: 50%;
+
+
+
+}
+.career header {
+	background-image: url(../assets/images/career.png);
+	min-height: 80vh !important;
+
+	position: relative;
+}
+.career .intro h1 {
+	margin: 0;
+	font-family: 'Crete Round', serif;
+}
 .career h4 {
 	font-family: 'Crete Round', serif;
 	font-size: 25px;
@@ -307,31 +352,75 @@ nav li {}
 }
 
 .career p {
-	font-family: 'Roboto Mono', monospace !important;
-	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3rem;
 }
-
+.career strong {
+	font-weight: 600;
+}
 /**ABOUT US**/
-.about {
-	background-image: url(../assets/images/Home.png);
+.about .intro {
+
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+
+
 
 }
 
-.about .centering {
-	width: 80%;
+.about nav a {
+	mix-blend-mode: difference;
+}
 
-	font-family: 'Roboto Mono', monospace !important;
+.about .intro h1 {
+	margin: 0;
+}
+
+.about .desc {
+
+
+	font-family: 'Lato', sans-serif !important;
 	font-size: 16px;
 	font-weight: 300;
 
 }
 
+.about header {
+	background-image: url(../assets/images/conf.jpg);
+	min-height: 80vh !important;
+
+	position: relative;
+}
 
 
 /**CONTACT**/
 .contact {
-	background-image: url(../assets/images/cellphone.jpg);
+	
 
+}
+.contact .intro {
+
+	display: inline-block;
+	padding: 10px;
+
+	position: absolute;
+	top: 50%;
+
+
+
+}
+.contact header {
+	background-image: url(../assets/images/cellphone.jpg);
+	min-height: 80vh !important;
+
+	position: relative;
+}
+.contact .intro h1 {
+	margin: 0;
+	font-family: 'Crete Round', serif;
 }
 
 form {
@@ -422,9 +511,33 @@ button,
 	background-size: cover;
 	background-position: center;
 }*/
-.project {
-	background-image: url(../assets/images/protein.jpg);
-	opacity: 100%;
+.project a {
+	
+	mix-blend-mode: difference;
+}
+.project-content-title{
+	font-family: 'Crete Round', serif;
+}
+.project .intro {
+
+	display: inline-block;
+	padding: 10px;
+
+	position: absolute;
+	top: 50%;
+
+
+
+}
+.project header {
+	background-image: url(../assets/images/pro2.jpg);
+	min-height: 80vh !important;
+
+	position: relative;
+}
+.project .intro h1 {
+	margin: 0;
+	font-family: 'Crete Round', serif;
 }
 
 .menu-it:hover {
@@ -434,6 +547,7 @@ button,
 .content-wrap {
 	height: 80vh;
 }
+
 
 .right,
 .left {}
@@ -445,9 +559,11 @@ button,
 }
 
 .project-content-item {
-	
+
 	height: 60vh;
 	padding: 10px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .project-img {
@@ -455,7 +571,8 @@ button,
 	height: 350px;
 
 }
-.project-img img{
+
+.project-img img {
 	width: 100%;
 	height: auto;
 }
@@ -478,23 +595,24 @@ button,
 
 .desc {
 	border-radius: 2px;
-	
-	
+
+
 	padding: 5px;
 }
 
 .desc p {
 	mix-blend-mode: difference;
-	font-size: 1rem;
-	font-family: 'Roboto Mono', monospace !important;
+	font-size: 1.2rem;
+	font-family: 'Lato', sans-serif;
 	padding: 10px;
+	line-height: 2rem;
 	border-radius: 5px;
 }
 
 .project-content .header {
 	font-family: 'Crete Round', serif;
 
-	
+
 	font-size: 25px;
 }
 
@@ -502,71 +620,8 @@ button,
 
 	width: 100%;
 }
-/* ---- flickity-button ---- */
 
-.flickity-button {
-	position: absolute;
-	background: hsla(0, 0%, 100%, 0.75);
-	border: none;
-	color: transparent;
-}
 
-.flickity-button:hover {
-	background: white;
-	cursor: pointer;
-}
-
-.flickity-button:focus {
-	outline: none;
-	box-shadow: 0 0 0 5px #19F;
-}
-
-.flickity-button:active {
-	opacity: 0.6;
-}
-
-.flickity-button:disabled {
-	opacity: 0.3;
-	cursor: auto;
-	/* prevent disabled button from capturing pointer up event. #716 */
-	pointer-events: none;
-}
-
-.flickity-button-icon {
-	fill: white !important;
-
-}
-
-/* ---- previous/next buttons ---- */
-
-.flickity-prev-next-button {
-	top: 50%;
-	width: 20px;
-	height: 44px;
-	border-radius: 0%;
-	/* vertically center */
-	transform: translateY(-10%);
-}
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: white;
-  border-radius: 10%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-/*carousel*/
-.carousel-wrap {
-	padding-left: 2%;
-}
-
-.gallery-cell {
-	width: 100%;
-	height: ;
-}
 
 
 
@@ -659,63 +714,66 @@ button,
 	}
 
 	.sidenav a {
-		font-size:1rem!important;
+		font-size: 1rem !important;
 	}
+
 	/**ABOUT US**/
 
-.about .centering {
-	width: 80%;
+	.about .centering {
+		width: 80%;
 
-	font-family: 'Roboto Mono', monospace !important;
-	font-size: 1rem;
-	font-weight: 300;
+		font-family: 'Roboto Mono', monospace !important;
+		font-size: 1rem;
+		font-weight: 300;
 
-}
-	
-/**SERVICES**/
+	}
 
-
-.menu-it {
-	font-size: 13px;
-}
-
-.service-content-title {
-	font-family: 'Crete Round', serif;
-	font-size: 1.7rem;
-}
-
-.service-group a,
-.service-group-summary {
-	font-family: 'Roboto Mono', monospace !important;
-	font-size: 0.9rem;
-}
-
-.service-group li {
-	margin-bottom: 2%;
-}
+	/**SERVICES**/
 
 
+	.menu-it {
+		font-size: 13px;
+	}
 
-.intro h4 {
-	font-family: 'Crete Round', serif;
-	font-size: 1.7rem;
-	letter-spacing: 0.4px;
-}
-/**CAREERS**/
+	.service-content-title {
+		font-family: 'Crete Round', serif;
+		font-size: 1.7rem;
+	}
+
+	.service-group a,
+	.service-group-summary {
+		font-family: 'Roboto Mono', monospace !important;
+		font-size: 0.9rem;
+	}
+
+	.service-group li {
+		margin-bottom: 2%;
+	}
 
 
-.career h4 {
-	font-family: 'Crete Round', serif;
-	font-size: 1.7rem;
-	letter-spacing: 0.2px;
-}
 
-.career p {
-	font-family: 'Roboto Mono', monospace !important;
-	font-size: 0.7rem;
-}
+	.intro h4 {
+		font-family: 'Crete Round', serif;
+		font-size: 1.7rem;
+		letter-spacing: 0.4px;
+	}
+
+	/**CAREERS**/
+
+
+	.career h4 {
+		font-family: 'Crete Round', serif;
+		font-size: 1.7rem;
+		letter-spacing: 0.2px;
+	}
+
+	.career p {
+		font-family: 'Roboto Mono', monospace !important;
+		font-size: 0.7rem;
+	}
+
 	/**PROJECTS*/
-/*.project {
+	/*.project {
 	background-image: url(../assets/images/project.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -724,78 +782,83 @@ button,
 	background-size: cover;
 	background-position: center;
 }*/
-.project {
-	background-image: url(../assets/images/protein.jpg);
-	opacity: 100%;
-}
+	.project-content-item {
+		margin-top: 10%;
+	}
+	.project h2  {
+		font-size: 1.7rem;
+	}
+	.project-img {
+		min-height: 150px!important;
+		margin: 10px;
+		position: relative;
+	}
 
-.menu-it:hover {
-	text-decoration: underline;
-}
+	.menu-it:hover {
+		text-decoration: underline;
+	}
 
-.content-wrap {
-	height: 80vh;
-}
+	.content-wrap {
+		height: 80vh;
+	}
 
-.flickity-button {
-	visibility: hidden;
-}
-.desc {
-	font-family: 'Noto Serif', serif;
+	.flickity-button {
+		visibility: hidden;
+	}
 
-	letter-spacing: 1px;
-}
+	.desc {
+		font-family: 'Noto Serif', serif;
 
-.project-content-list {}
+		letter-spacing: 1px;
+	}
 
-.project img {
-	width: 80vw;
-	height: 40vh;
-
-}
-
-.image-wrap {
-	position: relative;
-
+	.project-content-list {}
 
 
-}
 
-.single-item,
-.gallery-cell {
-	min-height: 80vh !important;
-}
+	.image-wrap {
+		position: relative;
 
-.content-item {
-	min-height: 80vh;
-}
 
-.desc {
-	border-radius: 2px;
-	position: relative;
-	top: 0;
-	left: 0;
-	min-height: 0%;
-	padding: 5px;
-}
 
-.desc p {
-	mix-blend-mode: difference;
-	font-size: 10px;
-	font-family: 'Roboto Mono', monospace !important;
-}
+	}
 
-.project-content .header {
-	font-family: 'Crete Round', serif;
+	.single-item,
+	.gallery-cell {
+		min-height: 80vh !important;
+	}
 
-	
-	font-size: 1.7rem;
-}
+	.content-item {
+		min-height: 80vh;
+	}
 
-.company-img {
+	.desc {
+		border-radius: 2px;
+		position: relative;
+		top: 0;
+		left: 0;
+		min-height: 0%;
+		padding: 5px;
+	}
 
-	width: 100%;
-}
+	.desc p {
+		mix-blend-mode: difference;
+		font-size: 10px;
+		font-family: 'Roboto Mono', monospace !important;
+	}
+
+	.project-content .header {
+		font-family: 'Crete Round', serif;
+
+
+		font-size: 1.7rem;
+	}
+
+	.company-img {
+
+		width: 100%;
+	}
+
 	/**CONTACT**/
 	.contact {
 		background-image: url(../assets/images/cellphone.jpg);
@@ -865,18 +928,18 @@ button,
 		background-color: #020202 !important;
 		font-family: 'Roboto Mono', monospace !important;
 	}
-	
 
-/**copyright**/
-.copyright p {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 1rem;
 
-}
+	/**copyright**/
+	.copyright p {
+		font-family: 'Roboto Mono', monospace;
+		font-size: 1rem;
 
-.copyright span {
-	font-size: 22px;
-}
+	}
+
+	.copyright span {
+		font-size: 22px;
+	}
 
 
 }
